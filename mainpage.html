@@ -78,9 +78,15 @@
 
 						<!-- Image -->
 							<a>
-								<model-viewer style="width: 30em; height: 30em; margin-left: 19em;" src="assets/3D/SKIMmodel.glb" camera-controls min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 0.1586m" auto-rotate camera-orbit="38.42deg 67.98deg 0.1586m" exposure="0.59" shadow-softness="1" shadow-intensity="0">
-
-</model-viewer>
+								<model-viewer id="toggle-model" style="width: 30em; height: 30em; margin-left: 19em;" src="assets/3D/SKIMmodelTRANS.glb" camera-controls min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 0.1586m" auto-rotate camera-orbit="38.42deg 67.98deg 0.1586m" exposure="0.59" shadow-softness="1" shadow-intensity="0">
+								
+								</model-viewer>
+								<script>
+									const models = ['SKIMmodel.glb', 'SKIMmodelTRANS.glb'];
+									const toggleModel = document.querySelector('#toggle-model');
+									let j = 0;
+									setInterval(() => toggleModel.setAttribute('src', `assets/3D/${models[j++ % 2]}`), 5000);
+</script>
 
 							</a>
 
