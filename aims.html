@@ -60,45 +60,45 @@
 					<div class="container">
 
 						<!-- Content -->
-							<div id="content">
+							<div style="text-align:center;" id="content">
 								<article class="box post">
 									<header class="style1">
-										<h2>Lorem ipsum dolor sit amet magna egestas<br class="mobile-hide" />
-										morbi bibendum sed malesuada</h2>
-										<p>Tempus feugiat veroeros sed nullam dolore</p>
+										<h2>Project Aim</h2>
 									</header>
-									<a href="#" class="image featured">
-										<img src="images/pic01.jpg" alt="" />
-									</a>
 									<p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
 									odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
 									facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
 									tempus euismod. Vestibulum ante ipsum primis in faucibus.</p>
-									<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-									habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-									bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-									lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-									Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-									magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-									leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-									amet risus elit.</p>
-									<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-									ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-									eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-									eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-									tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-									odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-									facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-									tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-									posuere cubilia.</p>
-									<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-									habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-									bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-									lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-									Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-									magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-									leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-									amet risus elit.</p>
+									<br>
+									<header class="style1">
+										<h2>Goals</h2>
+									</header>
+									<p><strong>Design</strong></p>
+									<p>he entire goal of this project is to create a device that can independently function as a food scanning device that is able to scan a product visually through machine learning on Tensorflow and be able to transmit this information into database over the web. It will be doing this through a camera on the device placed horizontally, hence items will be scanned while they are lying on a flat surface and from the top looking down. Because of this, it needs to have the capability of attaching itself to a range hood or any type of surface hanging, so making sure that the product is as light as possible are required components of the design. The shells encasing the device must also vary for both visual and functional variation.</p>
+									<p><strong>Hardware</strong></p>
+									<p>Research and develop an effective, low-cost hardware solution that is easy to manufacture. Select the right hardware that will be capable of the tasks will be asking of it (image capture, processing and databasing) in a timely matter. Have a list of components needed and drawings of how these components will work together cohesively.</p>
+									<p><strong>Image Capture</strong></p>
+									<p>To develop a manual image capture system that will take a comprehensive and high-quality picture every time the end-user interacts with it so that it will have an accurate interaction with TensorFlow. This will be base model of the artefact with plans to integrate further technologies including motion sensor and voice detection technology.</p>
+									<p><strong>Machine Learning and Visual Recognition</strong></p>
+									<p>The object recognition component is the intelligence behind the project. Taking the inputs from the camera via the hardware and scripting, the captured image is sent to Tensorflow Lite for processing against a trained model, with the object identification tag returned to the Pi. This is then delivered to the database as the output.</p>
+									<p><strong>Database</strong></p>
+									<p>The desired outcome for the databases used in the S.K.I.M (Smart Kitchen Inventory Manager) project is to have multiple databases that can be addressed by other sub systems and to have the databases integrate with each other seamlessly. We need to develop systems that efficiently handle the inputs and outputs of the system, with attention to data security too.</p>
+									<p>We aim for the databases to:</p>
+									<ul style="list-style-position: inside;">
+										<li>Translate data from the image recognition into labels that the user will understand</li>
+										<li>Store data safely and efficiently, using a method that makes it straightforward to utilise the data in a web application</li>
+										<li>Maintain the feature of scalability so that future development can adapt database processes flexibly</li>
+									</ul>
+									<p><strong>Marketing</strong></p>
+									<p>The main goal of this product is to help regular households have a much easier time when it comes to inventory management for their produce and food. In turn, this will help them have an easier time keep track of what they need and don’t need whenever they go the grocery store. Because of this, the marketing plan for this product will focus on real life situations and examples that are relatable to the customer, and this would help them see the value they could gain from using the product.</p>
+									<p>The goal for this artefact is to create a model with strong accuracy to be applied to TensorFlow Lite, and to accomplish this, the following goals must be achieved:</p>
+									<ul style="list-style-position: inside;">
+										<li>Training and test images for food items need to be obtained</li>
+										<li>Training images are imported to the model to “learn” what the item looks like</li>
+										<li>Test images are introduced to the model for identification and confirmation</li>
+										<li>The model will take the identification feedback to enhance its recognition capabilities</li>
+										<li>An accuracy rate as close to 100% as possible</li>
+									</ul>
 								</article>
 							</div>
 
